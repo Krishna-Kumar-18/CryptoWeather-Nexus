@@ -24,9 +24,9 @@ export default function Crypto() {
   }, []);
 
   return (
-    <div className="bg-white p-4 rounded-xl shadow max-w-md mt-6">
-      <h2 className="text-xl font-semibold mb-4 text-indigo-700">Live Crypto Prices</h2>
-      <ul className="space-y-2 text-gray-700 font-mono">
+    <div className="bg-white p-4 rounded-xl shadow max-w-md mt-6 mx-auto">
+      <h2 className="text-xl font-semibold mb-4 text-black">Live Crypto Prices</h2>
+      <ul className="space-y-2 text-indigo-700 font-mono">
         <li>Bitcoin: ${parseFloat(coin.bitcoin.toString()).toFixed(2)}</li>
         <li>Ethereum: ${parseFloat(coin.ethereum.toString()).toFixed(2)}</li>
         <li>Monero: ${parseFloat(coin.monero.toString()).toFixed(2)}</li>

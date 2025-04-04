@@ -1,4 +1,5 @@
 import Cryto from "@/components/crypto";
+import News from "@/components/news";
 import Weather, { IRequestBody } from "@/components/weather";
 
 export default async function dashboard() {
@@ -28,10 +29,7 @@ export default async function dashboard() {
 
       <Weather cities={cities} data={data} />
       <Cryto />
-      <section>
-
-        <h2 className="text-2xl font-bold mb-4 text-gray-800">News</h2>
-      </section>
+      <News />
     </main>
   );
 }
