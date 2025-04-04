@@ -1,3 +1,4 @@
+import Cryto from "@/components/crypto";
 import Weather, { IRequestBody } from "@/components/weather";
 
 export default async function dashboard() {
@@ -26,11 +27,9 @@ export default async function dashboard() {
     <main className="p-6 bg-gray-100 min-h-screen">
 
       <Weather cities={cities} data={data} />
-      <section className="mb-10">
-        <h2 className="text-2xl font-bold mb-4 text-gray-800">Crypto</h2>
-      </section>
-
+      <Cryto />
       <section>
+
         <h2 className="text-2xl font-bold mb-4 text-gray-800">News</h2>
       </section>
     </main>
